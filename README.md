@@ -129,6 +129,18 @@ pnpm dev   # launches a local n8n instance with hot-reload for the node
 
 We rely on the official [`@n8n/node-cli`](https://docs.n8n.io/integrations/creating-nodes/cli/) for builds, linting, and publishing. Make sure you run `pnpm build` before committing to keep the transpiled artifacts in sync.
 
+### Automated tests
+
+Run the end-to-end regression suite (requires `sqlite3` and a compiled `sqlite-vec` library):
+
+```bash
+SQLITE_VEC_LIBRARY=/usr/local/lib/sqlite-extensions/vec0 \
+SQLITE_VEC_ENTRYPOINT=sqlite3_vec_init \
+pnpm test
+```
+
+The test script spins up a temporary database, creates a `vec0` virtual table, inserts fixture vectors, and asserts that the nearest-neighbour query returns the expected record.
+
 ### Project structure
 
 ```
