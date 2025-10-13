@@ -1,22 +1,27 @@
 {
-    "name": "n8n-nodes-sqlite-manager",
+    "name": "n8n-nodes-rckflr-sqlitemanager",
     "version": "0.1.0",
-    "description": "Manage SQLite databases from n8n workflows",
+    "description": "SQLite (and sqlite-vec) toolbox for n8n workflows",
     "license": "MIT",
-    "homepage": "https://flows.automators.work",
+    "homepage": "https://github.com/MauricioPerera/n8n-nodes-rckflr-sqlitemanager",
     "keywords": [
         "n8n-community-node-package",
         "sqlite",
         "database",
-        "automation"
+        "automation",
+        "vector",
+        "sqlite-vec"
     ],
     "author": {
-        "name": "Automators Workflows",
-        "email": "devops@automators.work"
+        "name": "Mauricio Perera",
+        "email": "mauricioperera@gmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/automators-work/n8n-nodes-sqlite-manager"
+        "url": "https://github.com/MauricioPerera/n8n-nodes-rckflr-sqlitemanager"
+    },
+    "bugs": {
+        "url": "https://github.com/MauricioPerera/n8n-nodes-rckflr-sqlitemanager/issues"
     },
     "scripts": {
         "build": "n8n-node build",
