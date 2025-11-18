@@ -11,12 +11,19 @@
   - Optional pre-filtering with additional WHERE conditions
   - Customizable result fields
   - Query vector from input data or JSON array
+- **Performance Benchmark Suite**: Comprehensive testing tool (`pnpm test:benchmark`)
+  - Measures SQLite spawn overhead and extension loading time
+  - Compares single vs batch insert performance
+  - Analyzes vector search (KNN) query speed
+  - Provides automatic optimization recommendations
+  - Validates 10-15x speedup from batch operations
 - Performance optimization documentation with PRAGMA settings
 - New usage examples for batch insert and semantic search workflows
 
 ### Improved
 - Documentation with vector operation best practices
 - CLAUDE.md with detailed implementation notes for vector operations
+- Added benchmark script to npm scripts for easy performance testing
 
 ## 0.1.0 - 2025-10-13
 

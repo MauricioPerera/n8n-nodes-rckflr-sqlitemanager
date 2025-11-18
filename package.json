@@ -31,7 +31,8 @@
         "lint:fix": "n8n-node lint --fix",
         "release": "n8n-node release",
         "prepublishOnly": "n8n-node prerelease",
-        "test": "node tests/sqlite-manager.e2e.js"
+        "test": "node tests/sqlite-manager.e2e.js",
+        "test:benchmark": "node tests/benchmark.js"
     },
     "files": [
         "dist"
